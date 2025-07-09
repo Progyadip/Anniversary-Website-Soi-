@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Anniversary ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <audio id="bg-music" src="assets/bg-music.mp3" loop autoplay></audio>
+
+  <div class="falling-hearts"></div>
+
+  <div class="container">
+    
+    <!-- Slide 0: Intro -->
+    <section class="slide active">
+      <h1>My Dear soi 💕</h1>
+      <p>I thought I’d just send a message... but</p>
+    </section>
+
+    <!-- Slide 1 -->
+    <section class="slide">
+      <h1>Then I thought...</h1>
+      <p>It's our first anniversary... You deserve something more special!</p>
+    </section>
+
+    <!-- Slide 2 -->
+    <section class="slide">
+      <h1>So I made this 💌</h1>
+      <p>Because you are the most special part of my life...</p>
+    </section>
+
+    <!-- Slide 3 -->
+    <section class="slide">
+      <h2>Some words from my heart</h2>
+      <p>
+        You are my love, my safe space, my Strength and my chotto soi💞.  
+        Every moment with you is a memory I cherish.  
+        Here's to us 💫
+      </p>
+    </section>
+
+    <!-- Slide 4: Video -->
+    <section class="slide">
+      <h2>This is what I see in my Dreams💞</h2>
+      <div class="video-wrapper">
+        <video id="love-video" muted loop playsinline controls>
+          <source src="assets/love-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Slide 5: Image Slider -->
+    <section class="slide">
+      <h2>Our Memories 📸</h2>
+      <div class="image-slider">
+        <img id="slider-image" src="assets/images/photo1.jpg" alt="Memory" />
+      </div>
+    </section>
+
+    <!-- Slide 6: End -->
+    <section class="slide">
+      <h1>I love you ❤️</h1>
+      <p>This are the three words I said to you just 365 days ago.
+        Together we have made a lots of memories.
+        And I can't wait to make many more memories with you.</p>
+    </section>
+  </div>
+
+  <div class="controls">
+    <button onclick="prevSlide()">Prev</button>
+    <button onclick="nextSlide()">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f7c2e5, #c2e9fb);
+  height: 100vh;
+  overflow: hidden;
+  color: #333;
+  position: relative;
+}
+
+/* Container for all slides */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+/* Slide base styles */
+.slide {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+}
+
+.slide.active {
+  display: flex;
+}
+
+/* Typography */
+.slide h1,
+.slide h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #d0006f;
+}
+
+.slide p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-top: 0.5rem;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button styles */
+.controls {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.controls button {
+  margin: 0 10px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 118, 150, 0.4);
+}
+
+.controls button:hover {
+  box-shadow: 0 0 20px rgba(255, 118, 150, 0.7);
+  transform: scale(1.05);
+}
+
+/* Video style (tiktok-like portrait) */
+.video-wrapper {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 9 / 16;
+  margin-top: 1rem;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Image slider */
+.image-slider {
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+.image-slider img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Falling hearts */
+.falling-hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  color: #ff4e50;
+  font-size: 2rem;
+  animation: fall linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
