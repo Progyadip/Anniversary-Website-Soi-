@@ -93,6 +93,7 @@ function prevSlide() {
 
 // === IMAGE SLIDER ===
 const images = [
+  "assets/images/photo1.jpg",
   "assets/images/photo2.jpg",
   "assets/images/photo3.jpg",
   "assets/images/photo4.jpg",
@@ -100,8 +101,7 @@ const images = [
   "assets/images/photo7.jpg",
   "assets/images/photo3.jpg",
   "assets/images/photo8.jpg",
-  "assets/images/photo9.jpg",
-  "assets/images/photo10.jpg"
+  "assets/images/photo9.jpg"
 ];
 let imgIndex = 0;
 setInterval(() => {
