@@ -93,11 +93,9 @@ function prevSlide() {
 
 // === IMAGE SLIDER ===
 const images = [
-  "assets/images/photo1.jpg",
   "assets/images/photo2.jpg",
   "assets/images/photo3.jpg",
   "assets/images/photo4.jpg",
-  "assets/images/photo5.jpg",
   "assets/images/photo6.jpg",
   "assets/images/photo7.jpg",
   "assets/images/photo3.jpg",
