@@ -97,11 +97,8 @@ const images = [
   "assets/images/photo2.jpg",
   "assets/images/photo3.jpg",
   "assets/images/photo4.jpg",
+  "assets/images/photo5.jpg",
   "assets/images/photo6.jpg",
-  "assets/images/photo7.jpg",
-  "assets/images/photo3.jpg",
-  "assets/images/photo8.jpg",
-  "assets/images/photo9.jpg"
 ];
 let imgIndex = 0;
 setInterval(() => {
